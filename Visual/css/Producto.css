@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+#button li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+    display: inline-block;
+    color: rgb(175, 19, 206);
+    padding: 10px;
+    background-color: rgb(112, 183, 245);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #9ca9b3;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    background-color: #3367b6;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1e8dc0;
+    color: #770681;
+    padding: 10px 10;
+}
+.product-item {
+    margin-bottom: 40px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.btn:hover {
+    background-color: #555555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #695050;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555555;
+}
+
+
+

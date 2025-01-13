@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+</body><center>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILI D ARTE - ARTE ECHO MUEBLE</title>
+    <link rel="stylesheet" href="../css/Contacto.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MOBILI D ARTE</h1>
+            <nav>
+                <div id="menu">
+                <br>
+                    <ul id="button">
+                    <li> <a href="../index.html">Inicio</a>
+                    <li><a href="../paginas/productos.html">Productos</a></li>
+                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                    <li><a href="../paginas/Contacto.html">Contacto</a></li>
+                    <li><a href="../paginas/Contactenos.html">Contactenos</a></li>
+                    <li><a href="../paginas/Inicio de sesion.html" >inicio de sesion</a></li>
+                </ul>
+        </div>
+        <head>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    padding: 20px;
+                }
+                form {
+                    background-color: #ffffff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+                input[type="text"], input[type="email"], input[type="tel"] {
+                    width: calc(100% - 20px);
+                    padding: 10px;
+                    margin: 8px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                }
+                input[type="submit"], input[type="reset"] {
+                    background-color: #5ea2e0;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+                input[type="submit"]:hover, input[type="reset"]:hover {
+                    background-color: #2a96d4;
+                }
+            </style>
+        </head>
+        <body> <center>
+            <h2>Formulario de Datos de Cliente</h2>
+            <br>
+            <form action="../php/Procesador_formulario.php" method="post" id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+        
+            <script>
+                document.getElementById('formulario').addEventListener('reset', function() {
+                
+                    setTimeout(function() {
+                        document.getElementById('nombre').focus(); 
+                    }, 0);
+                });
+            </script>
+        </body>
+        </html>
